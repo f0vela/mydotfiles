@@ -2,3 +2,5 @@
 LICENSE
 README.md
 Brewfile
+.DS_Store
+.gitignore
