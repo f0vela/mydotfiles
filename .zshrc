@@ -1,11 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-#source .config/headline.zsh-theme
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
@@ -156,7 +150,7 @@ alias c2j="mlr --c2j --jlistwrap cat"
 # reactnative
 alias rn-android="npx react-native run-android"
 alias rn-ios="npx react-native run-ios"
-alias rn-randroid="cd android && ./gradlew assembleRelease"
+alias rn-r-android="cd android && ./gradlew assembleRelease"
 
 # bulk 7zip files by extension on it's own named files
 function 7z_bulk {
@@ -176,6 +170,9 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+#Node version manager FNM
+eval "$(fnm env --use-on-cd)"
+
 #homebrew Paths
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
@@ -186,7 +183,10 @@ export CPPFLAGS="-I/opt/homebrew/opt/php@7.4/include"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Get system info with ascii art
-fm6000 -g 20 -m 10 -l 25 -r -rd $HOME/.config/asciiart/ -c "random"
+# fm6000 -g 20 -m 10 -l 25 -r -rd $HOME/.config/asciiart/ -c "random"
+
+# Load pfetch
+pfetch
 
 #Load starshio prompt
 eval "$(starship init zsh)"
