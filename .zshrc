@@ -176,6 +176,7 @@ eval "$(fnm env --use-on-cd)"
 #homebrew Paths
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+export PATH="/opt/homebrew/bin/:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/php@7.4/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/php@7.4/include"
 
