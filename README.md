@@ -1,14 +1,39 @@
-# myconfigs
+# .dotfiles
 
-## What is in here
+This repository contains my config files for the apps I use.
 
-.config files to my osx system and apps
+## Configs in .dotfiles
 
 Alacritty Terminal
 WezTerm
+Kitty
 fzf
 zsh
 Starship
 neofetch
-lvim
 asciiart
+helix
+
+## Install Homebrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+This will install homebrew and command line tools for mac, it will take a while to download and install everything.
+
+## Tap brew bundle
+
+```
+brew tap Homebrew/bundle
+```
+
+## Get Brewfile from the repo
+
+Download the file of clone the repo to your machine.
+
+## Run Brewfile
+
+```
+brew bundle install
+```
