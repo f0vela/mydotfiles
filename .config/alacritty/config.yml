@@ -14,7 +14,7 @@ font:
     style: Bold Italic
   size: 11
 
-alt_send_esc: false
+window.option_as_alt: false
 #Window settings
 window:
   opacity: 0.95

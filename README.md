@@ -24,7 +24,7 @@ This will install homebrew and command line tools for mac, it will take a while 
 
 ## Tap brew bundle
 
-```
+```bash
 brew tap Homebrew/bundle
 ```
 
@@ -34,6 +34,14 @@ Download the file of clone the repo to your machine.
 
 ## Run Brewfile
 
-```
+```bash
 brew bundle install
+```
+
+## Run stow
+
+Go to the .dotfiles folder and run the command there to create the symlinks
+
+```bash
+stow .
 ```

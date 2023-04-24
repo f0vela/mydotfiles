@@ -185,7 +185,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Get system info with ascii art
 # fm6000 -g 20 -m 10 -l 25 -r -rd $HOME/.config/asciiart/ -c "random"
-
+alias composer="php $HOME/composer.phar"
 # Load pfetch
 pfetch
 
