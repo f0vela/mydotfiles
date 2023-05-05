@@ -17,14 +17,14 @@ font:
 window.option_as_alt: false
 #Window settings
 window:
-  opacity: 0.95
+  opacity: 0.99
   padding:
-    x: 10
-    y: 10
+    x: 15
+    y: 15
   decorations: buttonless
   dynamic_padding: false
   dimensions:
-    columns: 130
+    columns: 135
     lines: 45
 
 scrolling:
