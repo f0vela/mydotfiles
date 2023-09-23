@@ -109,11 +109,11 @@ alias cdown="cd $HOME/Downloads"
 alias cls="clear"
 
 # ls to exa
-alias ls="exa --group-directories-first --icons --color=always"
-alias la="exa --group-directories-first --icons --color=always -a"
-alias ll="exa --group-directories-first --icons --color=always -l"
-alias lla="exa --group-directories-first --icons --color=always -la"
-alias lt="exa --group-directories-first --icons --color=always -at -snew"
+alias ls="eza --group-directories-first --icons --color=always"
+alias la="eza --group-directories-first --icons --color=always -a"
+alias ll="eza --group-directories-first --icons --color=always -l"
+alias lla="eza --group-directories-first --icons --color=always -la"
+alias lt="eza --group-directories-first --icons --color=always -at -snew"
 
 # Move files to the trash can instead of just deleting them
 alias rm="trash"
@@ -185,7 +185,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Get system info with ascii art
 # fm6000 -g 20 -m 10 -l 25 -r -rd $HOME/.config/asciiart/ -c "random"
-alias composer="php $HOME/composer.phar"
+# alias composer="php $HOME/composer.phar"
 # Load pfetch
 pfetch
 
