@@ -1,7 +1,11 @@
-theme = "rose_pine_moon"
+theme = "dracula"
 
 [editor]
 line-number = "relative"
+bufferline = "multiple"
+cursorline = true
+rulers = [200]
+true-color = true
 auto-completion = true
 auto-format = true
 
@@ -11,7 +15,7 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = ["mode", "spinner"]
+left = ["mode", "spinner", "version-control", "file-name"]
 center = ["file-name"]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
@@ -31,3 +35,15 @@ mode.select = "SELECT"
 render = true
 character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
+
+[editor.lsp]
+# Disable automatically popups of signature parameter help
+auto-signature-help = false
+# Show LSP messages in the status line
+display-messages = true
+
+[keys.normal]
+"A-," = "goto_previous_buffer"
+"A-." = "goto_next_buffer"
+"A-w" = ":buffer-close"
+"A-/" = "repeat_last_motion"

@@ -4,7 +4,7 @@ local window_frame = require('rose-pine').window_frame()
 
 return {
   font = wezterm.font("FiraCode Nerd Font", {weight="Regular", stretch="Normal", style="Normal"}),
-  font_size = 12.0,
+  font_size = 11.0,
 
   hide_tab_bar_if_only_one_tab = false,
   --color_scheme = "Catppuccin Macchiato",
@@ -17,7 +17,7 @@ return {
   show_tab_index_in_tab_bar = false,
   switch_to_last_active_tab_when_closing_tab = true,
 
-  initial_cols = 128,
+  initial_cols = 100,
   initial_rows = 40,
 
   window_padding = {
