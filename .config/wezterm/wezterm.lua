@@ -1,19 +1,19 @@
 local wezterm = require 'wezterm'
-local colors = require('rose-pine').colors()
-local window_frame = require('rose-pine').window_frame()
 
 return {
   font = wezterm.font("FiraCode Nerd Font", {weight="Regular", stretch="Normal", style="Normal"}),
   font_size = 11.0,
 
+  color_scheme = "Material Darker (base16)",
+
   hide_tab_bar_if_only_one_tab = false,
   --color_scheme = "Catppuccin Macchiato",
-  window_background_opacity = 0.85,
+  window_background_opacity = 1.0,
   enable_scroll_bar = true,
   
   use_fancy_tab_bar = false,
   tab_bar_at_bottom = true,
-  tab_max_width = 30,
+  tab_max_width = 40,
   show_tab_index_in_tab_bar = false,
   switch_to_last_active_tab_when_closing_tab = true,
 
@@ -21,8 +21,8 @@ return {
   initial_rows = 40,
 
   window_padding = {
-    left = 5,
-    right = 5,
+    left = 10,
+    right = 10,
     top = 5,
     bottom = 15,
  },
@@ -33,15 +33,10 @@ return {
   },
 
   window_close_confirmation = "NeverPrompt",
-  window_frame = {
-    active_titlebar_bg = "#1A1927",
-    font_size = 9,
-  },
+
   automatically_reload_config = true,
 
-  colors = colors,
-  window_frame = window_frame,
-  window_decorations = "TITLE | MACOS_FORCE_ENABLE_SHADOW | RESIZE",
+  window_decorations = "TITLE | MACOS_FORCE_DISABLE_SHADOW | RESIZE",
 
   hyperlink_rules = {
     {
