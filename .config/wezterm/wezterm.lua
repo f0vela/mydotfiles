@@ -2,14 +2,14 @@ local wezterm = require 'wezterm'
 
 return {
   font = wezterm.font("FiraCode Nerd Font", {weight="Regular", stretch="Normal", style="Normal"}),
-  font_size = 11.0,
+  font_size = 11,
 
-  color_scheme = "Material Darker (base16)",
+  color_scheme = "Catppuccin Macchiato",
 
   hide_tab_bar_if_only_one_tab = false,
   --color_scheme = "Catppuccin Macchiato",
-  window_background_opacity = 1.0,
-  enable_scroll_bar = true,
+  window_background_opacity = 0.88,
+  enable_scroll_bar = false,
   
   use_fancy_tab_bar = false,
   tab_bar_at_bottom = true,
@@ -17,12 +17,10 @@ return {
   show_tab_index_in_tab_bar = false,
   switch_to_last_active_tab_when_closing_tab = true,
 
-  initial_cols = 100,
-  initial_rows = 40,
 
   window_padding = {
-    left = 10,
-    right = 10,
+    left = 15,
+    right = 15,
     top = 5,
     bottom = 15,
  },
@@ -36,7 +34,7 @@ return {
 
   automatically_reload_config = true,
 
-  window_decorations = "TITLE | MACOS_FORCE_DISABLE_SHADOW | RESIZE",
+  window_decorations = "MACOS_FORCE_DISABLE_SHADOW | RESIZE",
 
   hyperlink_rules = {
     {

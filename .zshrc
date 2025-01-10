@@ -164,9 +164,13 @@ function 7z_bulk {
 export PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
 
 #Android and rbenv paths
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+#export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+#export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -174,6 +178,10 @@ eval "$(rbenv init -)"
 eval "$(fnm env --use-on-cd)"
 
 #homebrew Paths
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
 export PATH="/opt/homebrew/bin/:$PATH"
@@ -192,7 +200,8 @@ pfetch
 #Load starshio prompt
 eval "$(starship init zsh)"
 
-# fzf loading
+eval "$(zoxide init --cmd cd zsh)"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
+export PATH=$PATH:/Users/fvelasquez/.spicetify
